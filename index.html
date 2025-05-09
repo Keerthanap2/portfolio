@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthana - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Keerthana</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="home-link"><span>Home</span></a></li>
+                <li><a href="#about"><span>About</span></a></li>
+                <li><a href="#projects"><span>Projects</span></a></li>
+                <li><a href="#contact"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="home-content">
+            <head>
+                <meta charset="UTF-8">
+                
+                
+        </head>
+        <body>
+            <h1 > Hello <span class="wave-emoji">👋</span>, I'm</h1>
+            <p> Keerthana P</p>
+            
+    </body>
+        </div>
+    </section>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Emoji Animation</title>
+            <style>
+                .wave-emoji {
+                    display: inline-block;
+                    font-size: 2rem;
+                    animation: wave 1s infinite ease-in-out;
+                }
+        
+                @keyframes wave {
+                    0%, 100% {
+                        transform: rotate(0deg);
+                    }
+                    25% {
+                        transform: rotate(-20deg);
+                    }
+                    50% {
+                        transform: rotate(20deg);
+                    }
+                    75% {
+                        transform: rotate(-10deg);
+                    }
+                }
+            </style>
+            <style>
+                .skills-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 3rem;
+                    flex-wrap: wrap;
+                    margin-top: 2rem;
+                }
+
+                .skill-item {
+                    text-align: center;
+                    transition: transform 0.3s ease;
+                }
+
+                .skill-item:hover {
+                    transform: translateY(-10px);
+                }
+
+                .skill-item img {
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 1rem;
+                }
+
+                .skill-item p {
+                    font-size: 1.1rem;
+                    margin: 0;
+                }
+            </style>
+            <style>
+                /* Hamburger Menu Styles */
+                <style>
+                    nav {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 1rem 2rem;
+                        width: 100%;
+                    }
+
+                    .nav-links {
+                        display: flex;
+                        gap: 2rem;
+                    }
+
+                    .hamburger {
+                        display: none;
+                        cursor: pointer;
+                        margin-left: auto; /* This will push it to the right */
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        nav {
+                            position: relative;
+                        }
+
+                        .hamburger {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            width: 30px;
+                            height: 24px;
+                            position: absolute;
+                            right: 2rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            z-index: 1000;
+                        }
+
+                        .hamburger span {
+                            display: block;
+                            height: 3px;
+                            width: 100%;
+                            background-color: white;
+                            transition: all 0.3s ease;
+                        }
+
+                        .nav-links {
+                            display: none;
+                            position: fixed;
+                            top: 0;
+                            right: 0;
+                            height: 100vh;
+                            width: 100%;
+                            background: rgba(0, 0, 0, 0.95);
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            z-index: 999;
+                        }
+
+                        .nav-links.active {
+                            display: flex;
+                        }
+
+                        /* Hamburger Animation */
+                        .hamburger.active span:nth-child(1) {
+                            transform: translateY(9px) rotate(45deg);
+                        }
+
+                        .hamburger.active span:nth-child(2) {
+                            opacity: 0;
+                        }
+
+                        .hamburger.active span:nth-child(3) {
+                            transform: translateY(-9px) rotate(-45deg);
+                        }
+                    }
+                </style>
+            </style>
+        </head>
+        </html>  
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate Web Developer with a keen eye for design and a passion for building user-friendly applications. I specialize in front-end development, creating clean and responsive designs and I love transforming ideas into interactive digital experiences. Apart from coding, I enjoy designing intuitive user interfaces using Figma and other design tools. I have a strong eye for detail and believe in crafting seamless user experiences. Currently, I'm expanding my knowledge in backend technologies and exploring new frameworks to enhance my development skills.</p>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                <p>JavaScript</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Language Learning Website</h3>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <p>An interactive platform designed to help users learn new languages through immersive exercises, quizzes, and real-time progress tracking.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">View Code</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <p>A modern, responsive portfolio website showcasing my projects and skills with smooth animations and clean design.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">View Code</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Weather Dashboard</h3>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>API</span>
+                </div>
+                <p>A weather application that provides real-time weather updates, forecasts, and interactive weather maps using weather API integration.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Have a project in mind? Let's get <br> to work.👋📫</h2>
+        
+        <form id="contact-form" onsubmit="return sendEmail(event)">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Say hello</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Designed by <span class="bold-text">Keerthana P</span></p>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <!-- GitHub Icon -->
+            <a href="https://github.com/Keerthanap2" target="_blank">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 16.42 5.16 20.17 9.3 21.22C9.8 21.32 10 21.04 10 20.8V18.9C7.72 19.41 7.16 17.99 7.16 17.99C6.72 16.95 6.08 16.68 6.08 16.68C5.22 16.13 6.15 16.14 6.15 16.14C7.1 16.2 7.64 17.12 7.64 17.12C8.46 18.57 9.87 18.17 10.4 17.93C10.5 17.3 10.75 16.88 11.02 16.63C8.86 16.38 6.6 15.46 6.6 11.64C6.6 10.54 6.98 9.62 7.66 8.9C7.56 8.65 7.22 7.67 7.76 6.45C7.76 6.45 8.62 6.19 10 7.31C10.84 7.07 11.72 6.95 12.6 6.95C13.48 6.95 14.36 7.07 15.2 7.31C16.58 6.19 17.44 6.45 17.44 6.45C17.98 7.67 17.64 8.65 17.54 8.9C18.22 9.62 18.6 10.54 18.6 11.64C18.6 15.47 16.34 16.37 14.18 16.62C14.53 16.91 14.85 17.53 14.85 18.48V20.8C14.85 21.04 15.05 21.33 15.55 21.22C19.69 20.16 22.85 16.41 22.85 12C22.85 6.48 18.52 2 12 2Z"/>
+                </svg>
+            </a>
+
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/keerthana-p93?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.45 2H3.55C2.69 2 2 2.69 2 3.55V20.45C2 21.31 2.69 22 3.55 22H20.45C21.31 22 22 21.31 22 20.45V3.55C22 2.69 21.31 2 20.45 2ZM7.76 19H4.85V9.5H7.76V19ZM6.3 8.14C5.35 8.14 4.58 7.37 4.58 6.42C4.58 5.47 5.35 4.7 6.3 4.7C7.25 4.7 8.02 5.47 8.02 6.42C8.02 7.37 7.25 8.14 6.3 8.14ZM19 19H16.1V14.11C16.1 12.95 15.98 12 14.63 12C13.29 12 13.07 12.81 13.07 14.02V19H10.17V9.5H12.93V10.77H12.98C13.36 10.06 14.25 9.25 15.6 9.25C18.3 9.25 19 10.93 19 13.42V19Z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    </b<>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navLinksItems = document.querySelectorAll('.nav-links li');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinksItems.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+    <script>
+        (function() {
+            emailjs.init("SVv7tKbpi4DUs_4hd"); // Add your EmailJS public key here
+        })();
+    
+        function sendEmail(e) {
+            e.preventDefault();
+    
+            const params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+            };
+    
+            emailjs.send("service_wov5gmg", "template_ov4is2i", params)
+                .then(function(response) {
+                    alert("Message sent successfully!");
+                    document.getElementById("contact-form").reset();
+                }, function(error) {
+                    alert("Failed to send message. Please try again.");
+                });
+    
+            return false;
+        }
+    </script>
+</body>
+</html>
